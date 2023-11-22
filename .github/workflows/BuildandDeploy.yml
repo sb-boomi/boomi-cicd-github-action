@@ -62,6 +62,8 @@ jobs:
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/initcrPackage.sh
+            echo "$compId"
+            echo "$compNotes"
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/initcrPackage.sh componentId=$compId packageVersion=$compVer componentType=$compType notes="$compNotes" extractComponentXmlFolder="$codeXML"
           done
 
