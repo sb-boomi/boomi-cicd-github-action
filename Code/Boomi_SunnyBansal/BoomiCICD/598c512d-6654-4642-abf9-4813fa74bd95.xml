@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="598c512d-6654-4642-abf9-4813fa74bd95" version="1" name="NetSuite Connection TBA" type="connector-settings" subType="netsuitesdk" createdDate="2023-06-15T04:40:58Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-06-15T04:40:58Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="true" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3" copiedFromComponentId="d9bf5c2c-8861-4bab-85dd-03e89096b21d" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description>This connection should NOT be configured directly here in this component and should be configured via extensions.
+Uses token based authentication. Leave user and Password blank. Retries intentionally set to 0.</bns:description>
+  <bns:object>
+    <GenericConnectionConfig xmlns="">
+      <field id="url" type="string" value="https://webservices.netsuite.com/services/NetSuitePort_2017_2"/>
+      <field id="user" type="string" value=""/>
+      <field id="password" type="password" value=""/>
+      <field id="accountNumber" type="string" value="SET VIA EXTENSIONS"/>
+      <field id="consumerKey" type="string" value="SET VIA EXTENSIONS"/>
+      <field id="consumerSecret" type="string" value="SET VIA EXTENSIONS"/>
+      <field id="tokenId" type="string" value="SET VIA EXTENSIONS"/>
+      <field id="tokenSecret" type="string" value="SET VIA EXTENSIONS"/>
+      <field id="applicationId" type="string" value="SET VIA EXTENSIONS"/>
+      <field id="version" type="string" value="v2017_2_0"/>
+      <field id="numRetries" type="integer" value="0"/>
+      <field id="maxConnections" type="integer" value="1"/>
+    </GenericConnectionConfig>
+  </bns:object>
+</bns:Component>

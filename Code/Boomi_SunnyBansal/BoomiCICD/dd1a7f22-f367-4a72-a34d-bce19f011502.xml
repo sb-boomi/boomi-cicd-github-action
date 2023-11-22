@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="dd1a7f22-f367-4a72-a34d-bce19f011502" version="1" name="Customer to NS Customer Create" type="transform.map" createdDate="2023-06-15T04:41:07Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-06-15T04:41:07Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="true" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3" copiedFromComponentId="464c4d64-5a77-4a62-a073-c6275d873a20" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Map xmlns="" fromProfile="de2ec928-8226-452d-b8f2-64bd035d6fdd" toProfile="318ac91f-a9e7-49a3-a352-8343e61a4cc7">
+      <Mappings>
+        <Mapping fromKey="590" fromKeyPath="*[@key='530']/*[@key='587']/*[@key='588'][@tagListKey='0']/*[@key='590'][@tagListKey='0']" fromNamePath="Customer/Addresses/Address/AddressLine1" fromTagListKey="0" fromType="profile" toKey="1294" toKeyPath="*[@key='1']/*[@key='612']/*[@key='858']/*[@key='976']/*[@key='1294']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/addr1" toType="profile"/>
+        <Mapping fromKey="591" fromKeyPath="*[@key='530']/*[@key='587']/*[@key='588'][@tagListKey='0']/*[@key='591'][@tagListKey='0']" fromNamePath="Customer/Addresses/Address/AddressLine2" fromTagListKey="0" fromType="profile" toKey="1296" toKeyPath="*[@key='1']/*[@key='612']/*[@key='858']/*[@key='976']/*[@key='1296']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/addr2" toType="profile"/>
+        <Mapping fromKey="593" fromKeyPath="*[@key='530']/*[@key='587']/*[@key='588'][@tagListKey='0']/*[@key='593'][@tagListKey='0']" fromNamePath="Customer/Addresses/Address/City" fromTagListKey="0" fromType="profile" toKey="1300" toKeyPath="*[@key='1']/*[@key='612']/*[@key='858']/*[@key='976']/*[@key='1300']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/city" toType="profile"/>
+        <Mapping fromKey="595" fromKeyPath="*[@key='530']/*[@key='587']/*[@key='588'][@tagListKey='0']/*[@key='595'][@tagListKey='0']" fromNamePath="Customer/Addresses/Address/State" fromTagListKey="0" fromType="profile" toKey="1302" toKeyPath="*[@key='1']/*[@key='612']/*[@key='858']/*[@key='976']/*[@key='1302']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/state" toType="profile"/>
+        <Mapping fromKey="597" fromKeyPath="*[@key='530']/*[@key='587']/*[@key='588'][@tagListKey='0']/*[@key='597'][@tagListKey='0']" fromNamePath="Customer/Addresses/Address/PostalCode" fromTagListKey="0" fromType="profile" toKey="1304" toKeyPath="*[@key='1']/*[@key='612']/*[@key='858']/*[@key='976']/*[@key='1304']" toNamePath="Customer/addressbookList/addressbook/addressbookAddress/zip" toType="profile"/>
+        <Mapping fromKey="532" fromKeyPath="*[@key='530']/*[@key='531']/*[@key='532']" fromNamePath="Customer/IDs/ID" fromType="profile" toKey="1552" toKeyPath="*[@key='1']/*[@key='628']/*[@key='1549']/*[@key='1552']" toNamePath="Customer/customFieldList/Boomi_External_ID/value" toType="profile"/>
+        <Mapping fromKey="748" fromKeyPath="*[@key='530']/*[@key='692']/*[@key='748']" fromNamePath="Customer/InternetAddress/WorkEmailAdress" fromType="profile" toKey="396" toKeyPath="*[@key='1']/*[@key='396']" toNamePath="Customer/email" toType="profile"/>
+        <Mapping fromKey="765" fromKeyPath="*[@key='530']/*[@key='765']" fromNamePath="Customer/SubsidiaryID" fromType="profile" toKey="672" toKeyPath="*[@key='1']/*[@key='432']/*[@key='672']" toNamePath="Customer/subsidiary/internalId" toType="profile"/>
+        <Mapping fromKey="769" fromKeyPath="*[@key='530']/*[@key='769']" fromNamePath="Customer/StoreIdentifier" fromType="profile" toKey="1556" toKeyPath="*[@key='1']/*[@key='628']/*[@key='1553']/*[@key='1556']" toNamePath="Customer/customFieldList/Boomi_Source/value" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

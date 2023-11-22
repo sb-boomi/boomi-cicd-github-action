@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/Other/Connect NetSuite with Shopify" componentId="d15b9043-e3fd-4b43-aad0-9c77fbe27f44" version="1" name="NetSuite Response Generic" type="profile.xml" createdDate="2023-06-15T04:41:07Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-06-15T04:41:07Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="true" folderName="Connect NetSuite with Shopify" folderId="Rjo1OTMyODA0" copiedFromComponentId="c0604ccf-e8d7-486d-96f6-91af44a69ec9" copiedFromComponentVersion="1">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <XMLProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <XMLGeneralInfo/>
+        <XMLOptions encoding="utf8" implicitElementOrdering="true" parseRespectMaxOccurs="true" respectMinOccurs="false" respectMinOccursAlways="false"/>
+      </ProfileProperties>
+      <DataElements>
+        <XMLElement dataType="character" isMappable="true" isNode="true" key="1" maxOccurs="1" minOccurs="1" name="Result" useNamespace="-1">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="2" maxOccurs="1" minOccurs="0" name="id" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="3" maxOccurs="1" minOccurs="0" name="success" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="4" maxOccurs="1" minOccurs="0" name="errors" useNamespace="-1">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="5" maxOccurs="1" minOccurs="0" name="error" useNamespace="-1">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="6" maxOccurs="1" minOccurs="0" name="statusCode" useNamespace="-1">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="7" maxOccurs="1" minOccurs="0" name="message" useNamespace="-1">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="8" maxOccurs="1" minOccurs="0" name="type" useNamespace="-1">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+            </XMLElement>
+          </XMLElement>
+        </XMLElement>
+      </DataElements>
+      <Namespaces>
+        <XMLNamespace key="-1" name="Empty Namespace">
+          <Types/>
+        </XMLNamespace>
+      </Namespaces>
+      <tagLists/>
+    </XMLProfile>
+  </bns:object>
+</bns:Component>
