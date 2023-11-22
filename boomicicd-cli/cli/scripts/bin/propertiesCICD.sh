@@ -7,9 +7,9 @@ export baseURL=https://api.boomi.com/api/rest/v1/$accountId
 #Do not set 
 export sonarRulesFile="$WD/conf/BoomiSonarRules.xml"
 
-export gitComponentRepoURL="{replace with your GitHubRepoURL}"
-export gitComponentUserName="{replace with your GitHubUsername}"
-export gitComponentUserEmail="{replace with your GitHub Email}"
+export gitComponentRepoURL="https://github.com/sb-boomi/boomi-cicd-github-action"
+export gitComponentUserName="sb-boomi"
+export gitComponentUserEmail="sunny.bansal@boomi.com"
 export gitComponentRepoName="Code" # Top level folder of the GIT REPO
 export gitComponentOption="CLONE" # This clones the repo; else default is to create a release tag. Check gitPush.sh file
 #export gitComponentCommitPath="/tree/master/" # For Azure Repos use this "?version=GBmaster&path=" this is used in code review report to construct the path
