@@ -102,12 +102,12 @@ jobs:
             listenerStatus=$(grep '^listenerStatus=' $file | cut -f2 -d'=')
             compNotes=$(grep '^deployNotes=' $file | cut -f2 -d'=')
             
-            export WD=~/src/boomicicd-cli/cli/scripts/
-            export WORKSPACE=~/src/boomicicd-cli/cli/scripts/
+            export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/
+            export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/
             
-            chmod +x ~/src/boomicicd-cli/cli/scripts/bin/common.sh
-            ~/src/boomicicd-cli/cli/scripts/bin/common.sh
+            chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
+            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             
-            chmod +x ~/src/boomicicd-cli/cli/scripts/initdeployPackage.sh
-            ~/src/boomicicd-cli/cli/scripts/initdeployPackage.sh componentId=$compId packageVersion=$compVer componentType=$compType env=$envName notes="$compNotes" listenerStatus=$listenerStatus
+            chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/initdeployPackage.sh
+            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/initdeployPackage.sh componentId=$compId packageVersion=$compVer componentType=$compType env=$envName notes="$compNotes" listenerStatus=$listenerStatus
           done
