@@ -5,9 +5,9 @@ componentType=process
 #uat
 #envId=88ce4a76-8c24-49d1-b7b1-7e4ef4ff42ba
 targetEnv=DEV
-#targetEnv=TEST
+targetEnv=TEST
 listenerStatus=PAUSED
-ver=0.2.27
+ver=0.2.28
 buildNotes=Build from GitHub
 deployNotes=Deployment from GitHub
 codeXML=Code
