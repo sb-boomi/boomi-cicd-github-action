@@ -1,13 +1,13 @@
 componentId=51e6e620-0949-4ce5-a888-8519deac526a
 componentType=process
-#dev12
+#dev
 #envId=	0fe24a23-f7d6-42b4-98f1-430e5ba83e55
 #uat
 #envId=88ce4a76-8c24-49d1-b7b1-7e4ef4ff42ba
 #targetEnv=DEV
 targetEnv=TEST
 listenerStatus=PAUSED
-ver=0.2.28
+ver=0.2.29
 buildNotes=Build from GitHub
 deployNotes=Deployment from GitHub
 codeXML=Code
