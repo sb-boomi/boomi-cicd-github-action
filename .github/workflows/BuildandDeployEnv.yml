@@ -2,7 +2,7 @@
 
 
 name: Build Package
-#on:
+on:
  # push:
   #  branches:
    #   - main
