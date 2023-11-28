@@ -21,6 +21,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+        inputs: manifestfilename
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -69,7 +70,7 @@ jobs:
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/initcrPackage.sh componentId=$compId packageVersion=$compVer componentType=$compType notes="$compNotes" extractComponentXmlFolder="$codeXML"
           done
 
-  deployPackage:
+  deployPackageTEST:
     needs: createPackage
     # The type of runner that the job will run on
     runs-on: [self-hosted, linux, X64]
@@ -103,6 +104,7 @@ jobs:
             envName=$(grep '^targetEnv=' $file | cut -f2 -d'=')
             listenerStatus=$(grep '^listenerStatus=' $file | cut -f2 -d'=')
             compNotes=$(grep '^deployNotes=' $file | cut -f2 -d'=')
+
             
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/
             export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/
