@@ -55,7 +55,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build Package Env
         run: |
-
+echo "${{ toJSON(github.event.inputs) }}"
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             compId=$(grep '^componentId=' $file | cut -f2 -d'=')
             compType=$(grep '^componentType=' $file | cut -f2 -d'=')
