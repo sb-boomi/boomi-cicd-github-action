@@ -56,7 +56,7 @@ jobs:
       - name: Build Package Env
         run: |
 
-        echo '${{ github.event.inputs.flutter_version }}'
+        echo '${{ github.event.inputs.manifestfilename }}'
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             compId=$(grep '^componentId=' $file | cut -f2 -d'=')
             compType=$(grep '^componentType=' $file | cut -f2 -d'=')
