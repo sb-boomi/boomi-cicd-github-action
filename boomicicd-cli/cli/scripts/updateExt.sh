@@ -13,4 +13,4 @@ then
 	exit $?
 fi
 
-$WD/bin/updateExtensions.sh componentId=$componentId packageVersion=$packageVersion componentType=$componentType notes="$notes" env=$env listenerStatus=$listenerStatus
+$WD/bin/updateExtensions.sh extensionJson=$extensionJsonFile env=$env
