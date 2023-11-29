@@ -59,15 +59,15 @@ jobs:
       - name: TEST Update Extension
         run: |
           echo "name: ${{ inputs.extensionfilename}}" 
-          file=$(<${{ inputs.extensionfilename}})
-          echo "file contents are .. $file"
+        
+          
           envName="TEST"
-          export IFS=","
-   
+                    export extensionJson="${{ parameters.inputs.extensionfilename}}"
+            echo "file contents are .. $extensionJson"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh
-            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh extensionJsonFile=$file env=$envName 
+            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh extensionJson=$extensionJson env=$envName 
  
