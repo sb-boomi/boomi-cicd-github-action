@@ -68,5 +68,5 @@ jobs:
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh
-            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh extensionJson=$extensionJson env=$envName 
+            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh extensionJson=${extensionJson} env=$envName 
  
