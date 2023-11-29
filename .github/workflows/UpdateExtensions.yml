@@ -28,6 +28,9 @@ on:
             default: ''
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+env:
+  # Setting an environment variable with the value of a configuration variable
+  NSUsername: ${{ vars.EXTENSIONSNSUSER }}
 jobs:
   # This workflow contains a single job called "build"
 
@@ -38,6 +41,7 @@ jobs:
     runs-on: [self-hosted, linux, X64]
     environment: 
         name: TEST
+        
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -61,7 +65,7 @@ jobs:
         run: |
             echo "name: ${{ inputs.extensionfilename}}" 
             envName="TEST"
-            echo "$GITHUB_CONTEXT"
+            echo "NS .. $NSUsername"
             echo "NSusername is... $EXTENSIONSNSUSER"
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
