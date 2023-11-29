@@ -61,7 +61,7 @@ jobs:
             echo "name: ${{ inputs.extensionfilename}}" 
             envName="TEST"
             
-            export extensionJson="$(<${{ inputs.manifestfilename}})"
+            export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
