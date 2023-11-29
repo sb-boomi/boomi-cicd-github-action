@@ -13,7 +13,7 @@
                         "id": "user",
                         "useDefault": false,
                         "usesEncryption": true,
-                        "valueFrom": "ExtensionsNSUser"
+                        "valueFrom": "EXTENSIONSNSUSER"
                     }
                 ],
                 "id": "598c512d-6654-4642-abf9-4813fa74bd95",
