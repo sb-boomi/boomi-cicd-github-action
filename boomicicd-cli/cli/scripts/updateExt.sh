@@ -5,7 +5,7 @@ set -a
 source $WD/bin/common.sh
 source $WD/bin/propertiesCICD.sh
 
-ARGUMENTS=(authToken componentId packageVersion notes componentType env listenerStatus)
+ARGUMENTS=(authToken componentId extensionJsonFile env)
 
 inputs "$@"
 if [ "$?" -gt 0 ]
