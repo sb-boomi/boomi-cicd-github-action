@@ -351,7 +351,12 @@ function printExtensions {
 
 # Extension function to retrieve value
 function getValueFrom {
-   export extensionValue=${!1}
+  
+
+       export extensionValue=${!valueUpper}
+        echo "Got value ${1} from environment variable: ${extensionValue}"
+      #  export extensionValue=${!1}
+   
    # export extensionValue=$(aws secretsmanager get-secret-value --secret-id ${1} | jq -r .SecretString)
 }
 
