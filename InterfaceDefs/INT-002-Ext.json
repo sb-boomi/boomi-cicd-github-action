@@ -1,1 +1,28 @@
-{\r\n    \"@type\": \"EnvironmentExtensions\",\r\n    \"connections\": {\r\n        \"@type\": \"Connections\",\r\n        \"connection\": [\r\n            {\r\n                \"@type\": \"Connection\",\r\n                \"field\": [\r\n                    {\r\n                        \"@type\": \"Field\",\r\n                        \"componentOverride\": false,\r\n                        \"encryptedValueSet\": false,\r\n                        \"id\": \"user\",\r\n                        \"useDefault\": false,\r\n                        \"usesEncryption\": true,\r\n                        \"valueFrom\": \"ExtensionsNSUser\"\r\n                    }\r\n                ],\r\n                \"id\": \"598c512d-6654-4642-abf9-4813fa74bd95\",\r\n                \"name\": \"NetSuite Connection TBA\"\r\n            }\r\n        ]\r\n    },\r\n    \"environmentId\": \"0a5043e9-b3d1-4723-b5a1-7c12b181ff98\",\r\n    \"extensionGroupId\": \"\",\r\n    \"id\": \"0a5043e9-b3d1-4723-b5a1-7c12b181ff98\",\r\n    \"partial\": \"true\"\r\n}
+{
+    "@type": "EnvironmentExtensions",
+    "connections": {
+        "@type": "Connections",
+        "connection": [
+            {
+                "@type": "Connection",
+                "field": [
+                    {
+                        "@type": "Field",
+                        "componentOverride": false,
+                        "encryptedValueSet": false,
+                        "id": "user",
+                        "useDefault": false,
+                        "usesEncryption": true,
+                        "valueFrom": "ExtensionsNSUser"
+                    }
+                ],
+                "id": "598c512d-6654-4642-abf9-4813fa74bd95",
+                "name": "NetSuite Connection TBA"
+            }
+        ]
+    },
+    "environmentId": "0a5043e9-b3d1-4723-b5a1-7c12b181ff98",
+    "extensionGroupId": "",
+    "id": "0a5043e9-b3d1-4723-b5a1-7c12b181ff98",
+    "partial": "true"
+}
