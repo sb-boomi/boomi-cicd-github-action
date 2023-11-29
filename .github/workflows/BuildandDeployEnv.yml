@@ -68,7 +68,7 @@ jobs:
           echo "codecml is ...$compIds"
           
           for compId in $componentIds; do
-            echo "$componentId"
+            echo "$compId"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
