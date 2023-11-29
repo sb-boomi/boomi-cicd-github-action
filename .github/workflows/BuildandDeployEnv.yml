@@ -65,7 +65,7 @@ jobs:
           compVer=$(grep '^ver=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compNotes=$(grep '^buildNotes='${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compIds=$(grep '^componentIds=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
-          echo "codecml is ...$compIds"
+          echo "codecml is ...$compIds" 
           echo "notes is ...$compNotes"
          
           for compId in $compIds; do
