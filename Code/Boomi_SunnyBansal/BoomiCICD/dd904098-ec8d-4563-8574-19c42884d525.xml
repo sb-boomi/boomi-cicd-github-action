@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="dd904098-ec8d-4563-8574-19c42884d525" version="1" name="SecondCICDProcess" type="process" createdDate="2023-11-29T00:16:35Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-11-29T00:16:35Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="true" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3" copiedFromComponentId="51e6e620-0949-4ce5-a888-8519deac526a" copiedFromComponentVersion="6">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="dd904098-ec8d-4563-8574-19c42884d525" version="1" name="SecondCICDProcess" type="process" createdDate="2023-11-29T00:16:35Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-11-29T00:16:35Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="false" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3" copiedFromComponentId="51e6e620-0949-4ce5-a888-8519deac526a" copiedFromComponentVersion="6">
   <bns:encryptedValues/>
   <bns:description/>
   <bns:object>
