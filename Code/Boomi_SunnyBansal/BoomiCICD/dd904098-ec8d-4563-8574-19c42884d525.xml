@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="dd904098-ec8d-4563-8574-19c42884d525" version="1" name="SecondCICDProcess" type="process" createdDate="2023-11-29T00:16:35Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-11-29T00:16:35Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="true" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3" copiedFromComponentId="51e6e620-0949-4ce5-a888-8519deac526a" copiedFromComponentVersion="6">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <process xmlns="" allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="96.0" y="94.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="288.0" y="168.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="catcherrors_icon" name="shape2" shapetype="catcherrors" userlabel="" x="304.0" y="160.0">
+          <configuration>
+            <catcherrors catchAll="true" retryCount="0"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="default" name="shape2.dragpoint1" text="Try" toShape="shape4" x="560.0" y="168.0"/>
+            <dragpoint identifier="error" name="shape2.dragpoint2" text="Catch" toShape="shape3" x="416.0" y="360.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="exception_icon" name="shape3" shapetype="exception" userlabel="Exception Thrown" x="432.0" y="352.0">
+          <configuration>
+            <exception stopsingledoc="true" title="Order Processing Error">
+              <exMessage>Error occurred while processing NetSuite Sales Order Upsert
+
+Error Message: {1}</exMessage>
+              <exParameters>
+                <parametervalue key="0" valueType="track">
+                  <trackparameter defaultValue="" propertyId="meta.base.catcherrorsmessage" propertyName="Base - Try/Catch Message"/>
+                </parametervalue>
+              </exParameters>
+            </exception>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="map_icon" name="shape4" shapetype="map" userlabel="" x="576.0" y="160.0">
+          <configuration>
+            <map mapId="f367bf6c-1ce4-4a41-aed6-70e38414c3b6"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape4.dragpoint1" toShape="shape7" x="752.0" y="168.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape5" shapetype="stop" userlabel="Success" x="1152.0" y="160.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+        <shape image="decision_icon" name="shape6" shapetype="decision" userlabel="Is Success?" x="976.0" y="160.0">
+          <configuration>
+            <decision comparison="equals" name="Is Success?">
+              <decisionvalue valueType="profile">
+                <profileelement elementId="3" elementName="success (Result/success)" profileId="f7ce9063-3ec3-4e91-89ed-e0bda0eba524" profileType="profile.xml"/>
+              </decisionvalue>
+              <decisionvalue valueType="static">
+                <staticparameter staticproperty="true"/>
+              </decisionvalue>
+            </decision>
+          </configuration>
+          <dragpoints>
+            <dragpoint identifier="true" name="shape6.dragpoint1" text="True" toShape="shape5" x="1136.0" y="168.0"/>
+            <dragpoint identifier="false" name="shape6.dragpoint2" text="False" toShape="shape8" x="1136.0" y="312.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="connectoraction_icon" name="shape7" shapetype="connectoraction" userlabel="" x="768.0" y="160.0">
+          <configuration>
+            <connectoraction actionType="UPDATE" allowDynamicCredentials="NONE" connectionId="96574156-7dd9-42c2-b103-f42901502984" connectorType="netsuitesdk" hideSettings="false" operationId="a3df1ec1-2cbb-403f-b68f-d0a28fc6fb2f" parameter-profile="1e0122bb-ea22-40c2-9e4f-935e923af18d">
+              <parameters/>
+            </connectoraction>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape7.dragpoint1" toShape="shape6" x="960.0" y="168.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape8" shapetype="stop" userlabel="Fail" x="1152.0" y="304.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides>
+    <Overrides xmlns="">
+      <Connections>
+        <ConnectionOverride id="96574156-7dd9-42c2-b103-f42901502984">
+          <field id="url" label="URL" overrideable="true"/>
+          <field id="user" label="User" overrideable="true"/>
+          <field id="password" label="Password" overrideable="true"/>
+          <field id="accountNumber" label="Account Number" overrideable="true"/>
+          <field id="consumerKey" label="Consumer Key" overrideable="true"/>
+          <field id="consumerSecretEncrypted" label="Consumer Secret" overrideable="true"/>
+          <field id="consumerSecret" label="Consumer Secret (Deprecated)" overrideable="true"/>
+          <field id="tokenId" label="Token Id" overrideable="true"/>
+          <field id="tokenSecretEncrypted" label="Token Secret" overrideable="true"/>
+          <field id="tokenSecret" label="Token Secret (Deprecated)" overrideable="true"/>
+          <field id="applicationId" label="Application Id" overrideable="false"/>
+          <field id="version" label="Version" overrideable="false"/>
+          <field id="numRetries" label="Number of Retries" overrideable="false"/>
+          <field id="maxConnections" label="Maximum Number of Concurrent Connections" overrideable="false"/>
+        </ConnectionOverride>
+      </Connections>
+      <PartnerOverrides/>
+      <Properties/>
+      <Extensions>
+        <ObjectDefinitions>
+          <objectDefinition connectionId="96574156-7dd9-42c2-b103-f42901502984" connectorType="netsuitesdk" id="96574156-7dd9-42c2-b103-f42901502984Customer-update-listsRelationships" name="NetSuite Customer-update-listsRelationships (NetSuite Connection TBA)" objectType="Customer-update-listsRelationships" userDefined="false">
+            <profiles>
+              <profile id="1e0122bb-ea22-40c2-9e4f-935e923af18d" name="NetSuite Customer UPDATE Request 2017.2" operationId="a3df1ec1-2cbb-403f-b68f-d0a28fc6fb2f" operationProfilePath="//GenericOperationConfig/@requestProfile" operationProfileRole="input" operationType="UPDATE" type="profile.xml"/>
+            </profiles>
+          </objectDefinition>
+          <unusedProfiles/>
+        </ObjectDefinitions>
+        <DataMaps>
+          <unusedMaps/>
+        </DataMaps>
+      </Extensions>
+      <CrossReferenceOverrides/>
+      <PGPOverrides/>
+      <DefinedProcessPropertyOverrides/>
+    </Overrides>
+  </bns:processOverrides>
+</bns:Component>

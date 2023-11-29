@@ -1,0 +1,1890 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="b3b645b6-3eb5-4c00-8d11-01087fb3cb7c" version="1" name="BB:Boomi:Customer" type="profile.xml" createdDate="2023-11-29T00:16:35Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-11-29T00:16:35Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="true" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3" copiedFromComponentId="51e6e620-0949-4ce5-a888-8519deac526a" copiedFromComponentVersion="6">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <XMLProfile xmlns="" modelVersion="2" strict="true">
+      <ProfileProperties>
+        <XMLGeneralInfo/>
+        <XMLOptions encoding="utf8" implicitElementOrdering="true" parseRespectMaxOccurs="true" respectMinOccurs="false" respectMinOccursAlways="false"/>
+      </ProfileProperties>
+      <DataElements>
+        <XMLElement dataType="character" isMappable="true" isNode="true" key="530" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Customer" typeExpanded="true" typeKey="3" typeName="typCustomer" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+          <DataFormat>
+            <ProfileCharacterFormat/>
+          </DataFormat>
+          <XMLNSDeclList>
+            <XMLNSDeclaration defaultNamespace="false" isMappable="false" isNode="true" key="4"/>
+          </XMLNSDeclList>
+          <QualifierList/>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="717" loopingOption="unique" maxOccurs="1" minOccurs="0" name="SyncTransactionStatus" typeExpanded="true" typeKey="8" typeName="typSyncTransactionStatus" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="718" loopingOption="unique" maxOccurs="1" minOccurs="0" name="operation" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="719" loopingOption="unique" maxOccurs="1" minOccurs="1" name="status" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="720" loopingOption="unique" maxOccurs="1" minOccurs="0" name="message" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="721" loopingOption="unique" maxOccurs="1" minOccurs="1" name="system" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="722" loopingOption="unique" maxOccurs="1" minOccurs="1" name="errors" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="723" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="error" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="724" loopingOption="unique" maxOccurs="1" minOccurs="1" name="message" typeKey="-1" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="725" loopingOption="unique" maxOccurs="1" minOccurs="1" name="code" typeKey="-1" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="726" loopingOption="unique" maxOccurs="1" minOccurs="1" name="context" typeKey="-1" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="531" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IDs" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="532" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="ID" typeExpanded="true" typeKey="27" typeName="typID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="533" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="534" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="ExternalID" typeExpanded="true" typeKey="31" typeName="typAlternateID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="535" name="Context" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="ALTERNATE"/>
+                  <Qualifier qualifierValue="EXTERNAL"/>
+                  <Qualifier qualifierValue="CUSTOM"/>
+                </QualifierList>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="536" name="CustomContext" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="537" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="538" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="AssociatedObjectID" typeExpanded="true" typeKey="37" typeName="typReferenceID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="686" name="ExternalID" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="539" name="ReferenceObjectType" required="true" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="540" name="ReferenceObjectRelationship" required="true" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="Employer"/>
+                  <Qualifier qualifierValue="Employee"/>
+                  <Qualifier qualifierValue="Spouse"/>
+                  <Qualifier qualifierValue="Parent"/>
+                  <Qualifier qualifierValue="Child"/>
+                  <Qualifier qualifierValue="Sibling"/>
+                  <Qualifier qualifierValue="Ascendant"/>
+                  <Qualifier qualifierValue="Descendant"/>
+                  <Qualifier qualifierValue="Manager"/>
+                </QualifierList>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="541" name="ReferenceObjectClassification" required="true" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="542" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="727" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Name" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="728" loopingOption="unique" maxOccurs="1" minOccurs="1" name="LastModifiedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+            </DataFormat>
+            <QualifierList/>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="729" name="SystemName" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+          </XMLElement>
+          <XMLElement dataType="datetime" isMappable="true" isNode="true" key="730" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CreatedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+            </DataFormat>
+            <QualifierList/>
+            <XMLAttribute dataType="character" isMappable="true" isNode="true" key="731" name="SystemName" required="false" useNamespace="-1" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLAttribute>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="543" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CustomFields" typeExpanded="true" typeKey="54" typeName="typCustomFields" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <QualifierList/>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="544" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="CustomField" typeExpanded="true" typeKey="57" typeName="typCustomField" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="545" name="FieldName" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="546" name="FieldType" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="547" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IsPerson" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="548" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Salutation" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <QualifierList>
+              <Qualifier qualifierValue="Mr."/>
+              <Qualifier qualifierValue="Mrs."/>
+              <Qualifier qualifierValue="Ms."/>
+              <Qualifier qualifierValue="Dr."/>
+            </QualifierList>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="549" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FullName" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="550" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FirstName" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="551" loopingOption="unique" maxOccurs="1" minOccurs="1" name="MiddleName" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="552" loopingOption="unique" maxOccurs="1" minOccurs="1" name="LastName" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="553" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Description" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="554" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Industry" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="555" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ParentAccount" typeExpanded="true" typeKey="70" typeName="typBaseObject" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="732" loopingOption="unique" maxOccurs="1" minOccurs="0" name="SyncTransactionStatus" typeExpanded="true" typeKey="8" typeName="typSyncTransactionStatus" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="733" loopingOption="unique" maxOccurs="1" minOccurs="0" name="operation" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="734" loopingOption="unique" maxOccurs="1" minOccurs="1" name="status" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="735" loopingOption="unique" maxOccurs="1" minOccurs="0" name="message" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="736" loopingOption="unique" maxOccurs="1" minOccurs="1" name="system" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="737" loopingOption="unique" maxOccurs="1" minOccurs="1" name="errors" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="738" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="error" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="739" loopingOption="unique" maxOccurs="1" minOccurs="1" name="message" typeKey="-1" useNamespace="4" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="740" loopingOption="unique" maxOccurs="1" minOccurs="1" name="code" typeKey="-1" useNamespace="4" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="741" loopingOption="unique" maxOccurs="1" minOccurs="1" name="context" typeKey="-1" useNamespace="4" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                </XMLElement>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="556" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IDs" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="557" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="ID" typeExpanded="true" typeKey="27" typeName="typID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="558" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="559" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="ExternalID" typeExpanded="true" typeKey="31" typeName="typAlternateID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="560" name="Context" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList>
+                    <Qualifier qualifierValue="ALTERNATE"/>
+                    <Qualifier qualifierValue="EXTERNAL"/>
+                    <Qualifier qualifierValue="CUSTOM"/>
+                  </QualifierList>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="561" name="CustomContext" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="562" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="563" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="AssociatedObjectID" typeExpanded="true" typeKey="37" typeName="typReferenceID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="687" name="ExternalID" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="564" name="ReferenceObjectType" required="true" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="565" name="ReferenceObjectRelationship" required="true" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList>
+                    <Qualifier qualifierValue="Employer"/>
+                    <Qualifier qualifierValue="Employee"/>
+                    <Qualifier qualifierValue="Spouse"/>
+                    <Qualifier qualifierValue="Parent"/>
+                    <Qualifier qualifierValue="Child"/>
+                    <Qualifier qualifierValue="Sibling"/>
+                    <Qualifier qualifierValue="Ascendant"/>
+                    <Qualifier qualifierValue="Descendant"/>
+                    <Qualifier qualifierValue="Manager"/>
+                  </QualifierList>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="566" name="ReferenceObjectClassification" required="true" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="567" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="742" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Name" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="datetime" isMappable="true" isNode="true" key="743" loopingOption="unique" maxOccurs="1" minOccurs="1" name="LastModifiedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+              </DataFormat>
+              <QualifierList/>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="744" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="datetime" isMappable="true" isNode="true" key="745" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CreatedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+              </DataFormat>
+              <QualifierList/>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="746" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="568" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CustomFields" typeExpanded="true" typeKey="54" typeName="typCustomFields" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="569" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="CustomField" typeExpanded="true" typeKey="57" typeName="typCustomField" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="570" name="FieldName" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="571" name="FieldType" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="572" loopingOption="unique" maxOccurs="1" minOccurs="1" name="SIC_Code" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="573" loopingOption="unique" maxOccurs="1" minOccurs="1" name="SIC_Description" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="574" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TickerSymbol" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="575" loopingOption="unique" maxOccurs="1" minOccurs="1" name="NAICS_Code" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="576" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Currency" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="577" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CustomerType" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="765" loopingOption="unique" maxOccurs="1" minOccurs="1" name="SubsidiaryID" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="578" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IsDeleted" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="579" loopingOption="unique" maxOccurs="1" minOccurs="0" name="CompanyInformation" typeExpanded="true" typeKey="86" typeName="typCompanyInformation" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="580" loopingOption="unique" maxOccurs="1" minOccurs="1" name="website" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="581" loopingOption="unique" maxOccurs="1" minOccurs="1" name="SIC_Code" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="582" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Industrty" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="583" loopingOption="unique" maxOccurs="1" minOccurs="1" name="NAICS_Code" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="584" loopingOption="unique" maxOccurs="1" minOccurs="1" name="NumberOfEmployees" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="585" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Description" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="586" loopingOption="unique" maxOccurs="1" minOccurs="1" name="DNB_Number" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="587" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Addresses" typeExpanded="true" typeKey="96" typeName="typAddresses" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="588" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Address" typeExpanded="true" typeKey="99" typeName="PhysicalAddress" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="589" name="Name" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="747" loopingOption="unique" maxOccurs="1" minOccurs="1" name="ID" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="590" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AddressLine1" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="591" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AddressLine2" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="592" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AddressLine3" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="593" loopingOption="unique" maxOccurs="1" minOccurs="1" name="City" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="594" loopingOption="unique" maxOccurs="1" minOccurs="1" name="County" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="595" loopingOption="unique" maxOccurs="1" minOccurs="1" name="State" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="596" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Country" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="597" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PostalCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="689" loopingOption="unique" maxOccurs="1" minOccurs="1" name="RegionID" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="690" loopingOption="unique" maxOccurs="1" minOccurs="1" name="defaultBilling" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="691" loopingOption="unique" maxOccurs="1" minOccurs="1" name="defaultShipping" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="598" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TeleFaxes" typeExpanded="true" typeKey="115" typeName="typTeleFaxes" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="599" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="WorkPhone" typeExpanded="true" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="600" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FullTelephoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="601" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CountryCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="602" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AreaCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="603" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PhoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="604" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Extension" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="605" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TelephoneType" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="HomePhone"/>
+                  <Qualifier qualifierValue="WorkPhone"/>
+                  <Qualifier qualifierValue="MobilePhone"/>
+                  <Qualifier qualifierValue="Fax"/>
+                  <Qualifier qualifierValue="Other"/>
+                  <Qualifier qualifierValue="BillPhone"/>
+                  <Qualifier qualifierValue="ShipPhone"/>
+                </QualifierList>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="606" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="HomePhone" typeExpanded="true" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="607" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FullTelephoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="608" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CountryCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="609" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AreaCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="610" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PhoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="611" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Extension" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="612" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TelephoneType" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="HomePhone"/>
+                  <Qualifier qualifierValue="WorkPhone"/>
+                  <Qualifier qualifierValue="MobilePhone"/>
+                  <Qualifier qualifierValue="Fax"/>
+                  <Qualifier qualifierValue="Other"/>
+                  <Qualifier qualifierValue="BillPhone"/>
+                  <Qualifier qualifierValue="ShipPhone"/>
+                </QualifierList>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="613" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="MobilePhone" typeExpanded="true" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="614" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FullTelephoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="615" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CountryCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="616" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AreaCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="617" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PhoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="618" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Extension" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="619" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TelephoneType" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="HomePhone"/>
+                  <Qualifier qualifierValue="WorkPhone"/>
+                  <Qualifier qualifierValue="MobilePhone"/>
+                  <Qualifier qualifierValue="Fax"/>
+                  <Qualifier qualifierValue="Other"/>
+                  <Qualifier qualifierValue="BillPhone"/>
+                  <Qualifier qualifierValue="ShipPhone"/>
+                </QualifierList>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="620" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="WokFax" typeExpanded="true" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="621" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FullTelephoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="622" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CountryCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="623" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AreaCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="624" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PhoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="625" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Extension" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="626" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TelephoneType" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="HomePhone"/>
+                  <Qualifier qualifierValue="WorkPhone"/>
+                  <Qualifier qualifierValue="MobilePhone"/>
+                  <Qualifier qualifierValue="Fax"/>
+                  <Qualifier qualifierValue="Other"/>
+                  <Qualifier qualifierValue="BillPhone"/>
+                  <Qualifier qualifierValue="ShipPhone"/>
+                </QualifierList>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="627" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="HomeFax" typeExpanded="true" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="628" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FullTelephoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="629" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CountryCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="630" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AreaCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="631" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PhoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="632" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Extension" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="633" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TelephoneType" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="HomePhone"/>
+                  <Qualifier qualifierValue="WorkPhone"/>
+                  <Qualifier qualifierValue="MobilePhone"/>
+                  <Qualifier qualifierValue="Fax"/>
+                  <Qualifier qualifierValue="Other"/>
+                  <Qualifier qualifierValue="BillPhone"/>
+                  <Qualifier qualifierValue="ShipPhone"/>
+                </QualifierList>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="634" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="TeleFax" typeExpanded="true" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="635" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FullTelephoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="636" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CountryCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="637" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AreaCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="638" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PhoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="639" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Extension" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="640" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TelephoneType" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="HomePhone"/>
+                  <Qualifier qualifierValue="WorkPhone"/>
+                  <Qualifier qualifierValue="MobilePhone"/>
+                  <Qualifier qualifierValue="Fax"/>
+                  <Qualifier qualifierValue="Other"/>
+                  <Qualifier qualifierValue="BillPhone"/>
+                  <Qualifier qualifierValue="ShipPhone"/>
+                </QualifierList>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="641" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="Other" typeExpanded="true" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="642" loopingOption="unique" maxOccurs="1" minOccurs="1" name="FullTelephoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="643" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CountryCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="644" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AreaCode" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="645" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PhoneNumber" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="646" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Extension" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="647" loopingOption="unique" maxOccurs="1" minOccurs="1" name="TelephoneType" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList>
+                  <Qualifier qualifierValue="HomePhone"/>
+                  <Qualifier qualifierValue="WorkPhone"/>
+                  <Qualifier qualifierValue="MobilePhone"/>
+                  <Qualifier qualifierValue="Fax"/>
+                  <Qualifier qualifierValue="Other"/>
+                  <Qualifier qualifierValue="BillPhone"/>
+                  <Qualifier qualifierValue="ShipPhone"/>
+                </QualifierList>
+              </XMLElement>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="692" loopingOption="unique" maxOccurs="1" minOccurs="1" name="InternetAddress" typeExpanded="true" typeKey="133" typeName="typInternetAddress" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="748" loopingOption="unique" maxOccurs="1" minOccurs="1" name="WorkEmailAdress" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="749" loopingOption="unique" maxOccurs="1" minOccurs="1" name="PersonalEmailAdress" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="695" loopingOption="unique" maxOccurs="1" minOccurs="1" name="Website" typeKey="-1" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="652" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AccountOwner" typeExpanded="true" typeKey="70" typeName="typBaseObject" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="750" loopingOption="unique" maxOccurs="1" minOccurs="0" name="SyncTransactionStatus" typeExpanded="true" typeKey="8" typeName="typSyncTransactionStatus" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="751" loopingOption="unique" maxOccurs="1" minOccurs="0" name="operation" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="752" loopingOption="unique" maxOccurs="1" minOccurs="1" name="status" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="753" loopingOption="unique" maxOccurs="1" minOccurs="0" name="message" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="754" loopingOption="unique" maxOccurs="1" minOccurs="1" name="system" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="755" loopingOption="unique" maxOccurs="1" minOccurs="1" name="errors" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="756" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="error" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="757" loopingOption="unique" maxOccurs="1" minOccurs="1" name="message" typeKey="-1" useNamespace="4" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="758" loopingOption="unique" maxOccurs="1" minOccurs="1" name="code" typeKey="-1" useNamespace="4" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="759" loopingOption="unique" maxOccurs="1" minOccurs="1" name="context" typeKey="-1" useNamespace="4" validateData="false">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                </XMLElement>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="653" loopingOption="unique" maxOccurs="1" minOccurs="1" name="IDs" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="654" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="ID" typeExpanded="true" typeKey="27" typeName="typID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="655" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="656" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="ExternalID" typeExpanded="true" typeKey="31" typeName="typAlternateID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="657" name="Context" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList>
+                    <Qualifier qualifierValue="ALTERNATE"/>
+                    <Qualifier qualifierValue="EXTERNAL"/>
+                    <Qualifier qualifierValue="CUSTOM"/>
+                  </QualifierList>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="658" name="CustomContext" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="659" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="660" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="AssociatedObjectID" typeExpanded="true" typeKey="37" typeName="typReferenceID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="696" name="ExternalID" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="661" name="ReferenceObjectType" required="true" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="662" name="ReferenceObjectRelationship" required="true" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList>
+                    <Qualifier qualifierValue="Employer"/>
+                    <Qualifier qualifierValue="Employee"/>
+                    <Qualifier qualifierValue="Spouse"/>
+                    <Qualifier qualifierValue="Parent"/>
+                    <Qualifier qualifierValue="Child"/>
+                    <Qualifier qualifierValue="Sibling"/>
+                    <Qualifier qualifierValue="Ascendant"/>
+                    <Qualifier qualifierValue="Descendant"/>
+                    <Qualifier qualifierValue="Manager"/>
+                  </QualifierList>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="663" name="ReferenceObjectClassification" required="true" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="664" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="760" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Name" typeKey="-1" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+            </XMLElement>
+            <XMLElement dataType="datetime" isMappable="true" isNode="true" key="761" loopingOption="unique" maxOccurs="1" minOccurs="1" name="LastModifiedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+              </DataFormat>
+              <QualifierList/>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="762" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="datetime" isMappable="true" isNode="true" key="763" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CreatedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+              </DataFormat>
+              <QualifierList/>
+              <XMLAttribute dataType="character" isMappable="true" isNode="true" key="764" name="SystemName" required="false" useNamespace="-1" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLAttribute>
+            </XMLElement>
+            <XMLElement dataType="character" isMappable="true" isNode="true" key="665" loopingOption="unique" maxOccurs="1" minOccurs="1" name="CustomFields" typeExpanded="true" typeKey="54" typeName="typCustomFields" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+              <DataFormat>
+                <ProfileCharacterFormat/>
+              </DataFormat>
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="666" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="CustomField" typeExpanded="true" typeKey="57" typeName="typCustomField" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="667" name="FieldName" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="668" name="FieldType" required="false" useNamespace="-1" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </XMLElement>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="697" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AccountOwnerName" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="670" loopingOption="unique" maxOccurs="1" minOccurs="1" name="AnnualRevenue" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="698" loopingOption="unique" maxOccurs="1" minOccurs="1" name="DUNSID" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="699" loopingOption="unique" maxOccurs="1" minOccurs="1" name="NoOfEmployees" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="700" loopingOption="unique" maxOccurs="1" minOccurs="1" name="StockSymbol" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="701" loopingOption="unique" maxOccurs="1" minOccurs="1" name="last_order_id" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="702" loopingOption="unique" maxOccurs="1" minOccurs="1" name="last_order_name" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="703" loopingOption="unique" maxOccurs="1" minOccurs="1" name="orders_count" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+            <QualifierList/>
+          </XMLElement>
+          <XMLElement dataType="number" isMappable="true" isNode="true" key="704" loopingOption="unique" maxOccurs="1" minOccurs="1" name="total_spent" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileNumberFormat numberFormat=""/>
+            </DataFormat>
+            <QualifierList/>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="767" loopingOption="unique" maxOccurs="1" minOccurs="1" name="SalesChannel" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <QualifierList/>
+          </XMLElement>
+          <XMLElement dataType="character" isMappable="true" isNode="true" key="769" loopingOption="unique" maxOccurs="1" minOccurs="1" name="StoreIdentifier" typeKey="-1" useNamespace="4" validateData="false">
+            <DataFormat>
+              <ProfileCharacterFormat/>
+            </DataFormat>
+            <QualifierList/>
+          </XMLElement>
+        </XMLElement>
+      </DataElements>
+      <Namespaces>
+        <XMLNamespace key="-1" name="Empty Namespace" prefix="ns2">
+          <Types/>
+        </XMLNamespace>
+        <XMLNamespace key="4" name="http://www.boomi.com/Solutions/" prefix="ns1">
+          <Types>
+            <Type anonymous="false" declarationClass="eRef" typeKey="3">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="4" loopingOption="unique" maxOccurs="1" minOccurs="0" name="Customer" typeExpanded="false" typeKey="5" typeName="typCustomer" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="99">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="100" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="PhysicalAddress" typeExpanded="false" typeKey="99" typeName="PhysicalAddress" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="101" name="Name" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="102" maxOccurs="1" minOccurs="1" name="ID" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="103" maxOccurs="1" minOccurs="1" name="AddressLine1" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="104" maxOccurs="1" minOccurs="1" name="AddressLine2" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="105" maxOccurs="1" minOccurs="1" name="AddressLine3" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="106" maxOccurs="1" minOccurs="1" name="City" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="107" maxOccurs="1" minOccurs="1" name="County" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="108" maxOccurs="1" minOccurs="1" name="State" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="109" maxOccurs="1" minOccurs="1" name="Country" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="110" maxOccurs="1" minOccurs="1" name="PostalCode" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="111" maxOccurs="1" minOccurs="1" name="RegionID" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="112" maxOccurs="1" minOccurs="1" name="defaultBilling" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="113" maxOccurs="1" minOccurs="1" name="defaultShipping" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="96">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="97" loopingOption="unique" maxOccurs="1" minOccurs="1" name="typAddresses" typeExpanded="false" typeKey="96" typeName="typAddresses" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="98" maxOccurs="-1" minOccurs="0" name="Address" typeExpanded="false" typeKey="99" typeName="PhysicalAddress" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="31">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="32" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="typAlternateID" typeExpanded="false" typeKey="31" typeName="typAlternateID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="33" name="Context" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList>
+                    <Qualifier qualifierValue="ALTERNATE"/>
+                    <Qualifier qualifierValue="EXTERNAL"/>
+                    <Qualifier qualifierValue="CUSTOM"/>
+                  </QualifierList>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="34" name="CustomContext" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="35" name="SystemName" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="70">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="71" loopingOption="unique" maxOccurs="1" minOccurs="1" name="typBaseObject" typeExpanded="false" typeKey="70" typeName="typBaseObject" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="72" maxOccurs="1" minOccurs="0" name="SyncTransactionStatus" typeExpanded="false" typeKey="8" typeName="typSyncTransactionStatus" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="73" maxOccurs="1" minOccurs="1" name="IDs" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="26" maxOccurs="-1" minOccurs="0" name="ID" typeExpanded="false" typeKey="27" typeName="typID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="30" maxOccurs="-1" minOccurs="0" name="ExternalID" typeExpanded="false" typeKey="31" typeName="typAlternateID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="36" maxOccurs="-1" minOccurs="0" name="AssociatedObjectID" typeExpanded="false" typeKey="37" typeName="typReferenceID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="44" maxOccurs="1" minOccurs="0" name="Name" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                </XMLElement>
+                <XMLElement dataType="datetime" isMappable="true" isNode="true" key="74" maxOccurs="1" minOccurs="1" name="LastModifiedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+                <XMLElement dataType="datetime" isMappable="true" isNode="true" key="75" maxOccurs="1" minOccurs="1" name="CreatedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="76" maxOccurs="1" minOccurs="1" name="CustomFields" typeExpanded="false" typeKey="54" typeName="typCustomFields" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="86">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="87" loopingOption="unique" maxOccurs="1" minOccurs="0" name="typCompanyInformation" typeExpanded="false" typeKey="86" typeName="typCompanyInformation" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="88" maxOccurs="1" minOccurs="1" name="website" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="89" maxOccurs="1" minOccurs="1" name="SIC_Code" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="90" maxOccurs="1" minOccurs="1" name="Industrty" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="91" maxOccurs="1" minOccurs="1" name="NAICS_Code" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="92" maxOccurs="1" minOccurs="1" name="NumberOfEmployees" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="93" maxOccurs="1" minOccurs="1" name="Description" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="94" maxOccurs="1" minOccurs="1" name="DNB_Number" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="5">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="6" loopingOption="unique" maxOccurs="1" minOccurs="0" name="typCustomer" typeExpanded="false" typeKey="3" typeName="typCustomer" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="7" maxOccurs="1" minOccurs="0" name="SyncTransactionStatus" typeExpanded="false" typeKey="8" typeName="typSyncTransactionStatus" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="23" maxOccurs="1" minOccurs="1" name="IDs" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="26" maxOccurs="-1" minOccurs="0" name="ID" typeExpanded="false" typeKey="27" typeName="typID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="30" maxOccurs="-1" minOccurs="0" name="ExternalID" typeExpanded="false" typeKey="31" typeName="typAlternateID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="36" maxOccurs="-1" minOccurs="0" name="AssociatedObjectID" typeExpanded="false" typeKey="37" typeName="typReferenceID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="44" maxOccurs="1" minOccurs="0" name="Name" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                  </XMLElement>
+                </XMLElement>
+                <XMLElement dataType="datetime" isMappable="true" isNode="true" key="45" maxOccurs="1" minOccurs="1" name="LastModifiedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+                <XMLElement dataType="datetime" isMappable="true" isNode="true" key="49" maxOccurs="1" minOccurs="1" name="CreatedDate" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileDateFormat dateFormat="yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="53" maxOccurs="1" minOccurs="1" name="CustomFields" typeExpanded="false" typeKey="54" typeName="typCustomFields" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="61" maxOccurs="1" minOccurs="1" name="IsPerson" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="62" maxOccurs="1" minOccurs="0" name="Salutation" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList>
+                    <Qualifier qualifierValue="Mr."/>
+                    <Qualifier qualifierValue="Mrs."/>
+                    <Qualifier qualifierValue="Ms."/>
+                    <Qualifier qualifierValue="Dr."/>
+                  </QualifierList>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="63" maxOccurs="1" minOccurs="1" name="FullName" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="64" maxOccurs="1" minOccurs="1" name="FirstName" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="65" maxOccurs="1" minOccurs="1" name="MiddleName" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="66" maxOccurs="1" minOccurs="1" name="LastName" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="67" maxOccurs="1" minOccurs="1" name="Description" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="68" maxOccurs="1" minOccurs="1" name="Industry" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="69" maxOccurs="1" minOccurs="1" name="ParentAccount" typeExpanded="false" typeKey="70" typeName="typBaseObject" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="77" maxOccurs="1" minOccurs="1" name="SIC_Code" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="78" maxOccurs="1" minOccurs="1" name="SIC_Description" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="79" maxOccurs="1" minOccurs="1" name="TickerSymbol" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="80" maxOccurs="1" minOccurs="1" name="NAICS_Code" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="81" maxOccurs="1" minOccurs="1" name="Currency" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="82" maxOccurs="1" minOccurs="1" name="CustomerType" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="83" maxOccurs="1" minOccurs="1" name="SubsidiaryID" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="84" maxOccurs="1" minOccurs="1" name="IsDeleted" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="85" maxOccurs="1" minOccurs="0" name="CompanyInformation" typeExpanded="false" typeKey="86" typeName="typCompanyInformation" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="95" maxOccurs="1" minOccurs="1" name="Addresses" typeExpanded="false" typeKey="96" typeName="typAddresses" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="114" maxOccurs="1" minOccurs="1" name="TeleFaxes" typeExpanded="false" typeKey="115" typeName="typTeleFaxes" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="132" maxOccurs="1" minOccurs="1" name="InternetAddress" typeExpanded="false" typeKey="133" typeName="typInternetAddress" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="138" maxOccurs="1" minOccurs="1" name="AccountOwner" typeExpanded="false" typeKey="70" typeName="typBaseObject" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="139" maxOccurs="1" minOccurs="1" name="AccountOwnerName" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="number" isMappable="true" isNode="true" key="140" maxOccurs="1" minOccurs="1" name="AnnualRevenue" useNamespace="4">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="number" isMappable="true" isNode="true" key="141" maxOccurs="1" minOccurs="1" name="DUNSID" useNamespace="4">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="number" isMappable="true" isNode="true" key="142" maxOccurs="1" minOccurs="1" name="NoOfEmployees" useNamespace="4">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="number" isMappable="true" isNode="true" key="143" maxOccurs="1" minOccurs="1" name="StockSymbol" useNamespace="4">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="144" maxOccurs="1" minOccurs="1" name="last_order_id" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="145" maxOccurs="1" minOccurs="1" name="last_order_name" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="number" isMappable="true" isNode="true" key="146" maxOccurs="1" minOccurs="1" name="orders_count" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+                <XMLElement dataType="number" isMappable="true" isNode="true" key="147" maxOccurs="1" minOccurs="1" name="total_spent" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileNumberFormat numberFormat=""/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="766" loopingOption="unique" maxOccurs="1" minOccurs="1" name="SalesChannel" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="768" loopingOption="unique" maxOccurs="1" minOccurs="1" name="StoreIdentifier" useNamespace="4" validateData="false">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList/>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="57">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="58" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="typCustomField" typeExpanded="false" typeKey="57" typeName="typCustomField" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="59" name="FieldName" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="60" name="FieldType" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="54">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="55" loopingOption="unique" maxOccurs="1" minOccurs="1" name="typCustomFields" typeExpanded="false" typeKey="54" typeName="typCustomFields" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="56" maxOccurs="-1" minOccurs="0" name="CustomField" typeExpanded="false" typeKey="57" typeName="typCustomField" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="27">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="28" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="typID" typeExpanded="false" typeKey="27" typeName="typID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="29" name="SystemName" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="133">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="134" loopingOption="unique" maxOccurs="1" minOccurs="1" name="typInternetAddress" typeExpanded="false" typeKey="133" typeName="typInternetAddress" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="135" maxOccurs="1" minOccurs="1" name="WorkEmailAdress" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="136" maxOccurs="1" minOccurs="1" name="PersonalEmailAdress" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="137" maxOccurs="1" minOccurs="1" name="Website" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="37">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="38" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="typReferenceID" typeExpanded="false" typeKey="37" typeName="typReferenceID" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="39" name="ExternalID" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="40" name="ReferenceObjectType" required="true" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="41" name="ReferenceObjectRelationship" required="true" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList>
+                    <Qualifier qualifierValue="Employer"/>
+                    <Qualifier qualifierValue="Employee"/>
+                    <Qualifier qualifierValue="Spouse"/>
+                    <Qualifier qualifierValue="Parent"/>
+                    <Qualifier qualifierValue="Child"/>
+                    <Qualifier qualifierValue="Sibling"/>
+                    <Qualifier qualifierValue="Ascendant"/>
+                    <Qualifier qualifierValue="Descendant"/>
+                    <Qualifier qualifierValue="Manager"/>
+                  </QualifierList>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="42" name="ReferenceObjectClassification" required="true" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+                <XMLAttribute dataType="character" isMappable="true" isNode="true" key="43" name="SystemName" required="false" useNamespace="-1">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLAttribute>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="8">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="9" loopingOption="unique" maxOccurs="1" minOccurs="0" name="typSyncTransactionStatus" typeExpanded="false" typeKey="8" typeName="typSyncTransactionStatus" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="10" maxOccurs="1" minOccurs="0" name="operation" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="11" maxOccurs="1" minOccurs="1" name="status" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="12" maxOccurs="1" minOccurs="0" name="message" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="13" maxOccurs="1" minOccurs="1" name="system" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="14" maxOccurs="1" minOccurs="1" name="errors" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <XMLElement dataType="character" isMappable="true" isNode="true" key="17" maxOccurs="-1" minOccurs="0" name="error" typeExpanded="true" typeKey="-1" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                    <DataFormat>
+                      <ProfileCharacterFormat/>
+                    </DataFormat>
+                    <XMLElement dataType="character" isMappable="true" isNode="true" key="20" maxOccurs="1" minOccurs="1" name="message" useNamespace="4">
+                      <DataFormat>
+                        <ProfileCharacterFormat/>
+                      </DataFormat>
+                    </XMLElement>
+                    <XMLElement dataType="character" isMappable="true" isNode="true" key="21" maxOccurs="1" minOccurs="1" name="code" useNamespace="4">
+                      <DataFormat>
+                        <ProfileCharacterFormat/>
+                      </DataFormat>
+                    </XMLElement>
+                    <XMLElement dataType="character" isMappable="true" isNode="true" key="22" maxOccurs="1" minOccurs="1" name="context" useNamespace="4">
+                      <DataFormat>
+                        <ProfileCharacterFormat/>
+                      </DataFormat>
+                    </XMLElement>
+                  </XMLElement>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="115">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="116" loopingOption="unique" maxOccurs="1" minOccurs="1" name="typTeleFaxes" typeExpanded="false" typeKey="115" typeName="typTeleFaxes" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="117" maxOccurs="-1" minOccurs="0" name="WorkPhone" typeExpanded="false" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="126" maxOccurs="-1" minOccurs="0" name="HomePhone" typeExpanded="false" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="127" maxOccurs="-1" minOccurs="0" name="MobilePhone" typeExpanded="false" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="128" maxOccurs="-1" minOccurs="0" name="WokFax" typeExpanded="false" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="129" maxOccurs="-1" minOccurs="0" name="HomeFax" typeExpanded="false" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="130" maxOccurs="-1" minOccurs="0" name="TeleFax" typeExpanded="false" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="131" maxOccurs="-1" minOccurs="0" name="Other" typeExpanded="false" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+            <Type anonymous="false" declarationClass="cType" typeKey="118">
+              <XMLElement dataType="character" isMappable="true" isNode="true" key="119" loopingOption="unique" maxOccurs="-1" minOccurs="0" name="typTelephone" typeExpanded="false" typeKey="118" typeName="typTelephone" typeNamespace="http://www.boomi.com/Solutions/" useNamespace="4" validateData="false">
+                <DataFormat>
+                  <ProfileCharacterFormat/>
+                </DataFormat>
+                <QualifierList/>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="120" maxOccurs="1" minOccurs="1" name="FullTelephoneNumber" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="121" maxOccurs="1" minOccurs="1" name="CountryCode" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="122" maxOccurs="1" minOccurs="1" name="AreaCode" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="123" maxOccurs="1" minOccurs="1" name="PhoneNumber" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="124" maxOccurs="1" minOccurs="1" name="Extension" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                </XMLElement>
+                <XMLElement dataType="character" isMappable="true" isNode="true" key="125" maxOccurs="1" minOccurs="1" name="TelephoneType" useNamespace="4">
+                  <DataFormat>
+                    <ProfileCharacterFormat/>
+                  </DataFormat>
+                  <QualifierList>
+                    <Qualifier qualifierValue="HomePhone"/>
+                    <Qualifier qualifierValue="WorkPhone"/>
+                    <Qualifier qualifierValue="MobilePhone"/>
+                    <Qualifier qualifierValue="Fax"/>
+                    <Qualifier qualifierValue="Other"/>
+                    <Qualifier qualifierValue="BillPhone"/>
+                    <Qualifier qualifierValue="ShipPhone"/>
+                  </QualifierList>
+                </XMLElement>
+              </XMLElement>
+            </Type>
+          </Types>
+        </XMLNamespace>
+      </Namespaces>
+      <tagLists>
+        <TagList elementKey="588" listKey="10">
+          <GroupingExpression operator="and">
+            <TagExpression identifierKey="589" identifierName="Name" identifierType="value">
+              <identifierValue>Billing</identifierValue>
+            </TagExpression>
+          </GroupingExpression>
+        </TagList>
+        <TagList elementKey="588" listKey="11">
+          <GroupingExpression operator="and">
+            <TagExpression identifierKey="589" identifierName="Name" identifierType="value">
+              <identifierValue>Shipping</identifierValue>
+            </TagExpression>
+          </GroupingExpression>
+        </TagList>
+      </tagLists>
+    </XMLProfile>
+  </bns:object>
+</bns:Component>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="a3df1ec1-2cbb-403f-b68f-d0a28fc6fb2f" version="1" name="Customer Update 2017.2" type="connector-action" subType="netsuitesdk" createdDate="2023-11-29T00:16:35Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-11-29T00:16:35Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="true" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3" copiedFromComponentId="51e6e620-0949-4ce5-a888-8519deac526a" copiedFromComponentVersion="6">
+  <bns:encryptedValues/>
+  <bns:description/>
+  <bns:object>
+    <Operation xmlns="" returnApplicationErrors="false" trackResponse="false">
+      <Archiving directory="" enabled="false"/>
+      <Configuration>
+        <GenericOperationConfig objectTypeId="Customer-update-listsRelationships" objectTypeName="Customer" operationType="UPDATE" requestProfile="1e0122bb-ea22-40c2-9e4f-935e923af18d" requestProfileType="xml" responseProfileType="xml">
+          <field id="useConditionalDefaultsOnUpdate" type="string" value="true"/>
+          <field id="warningAsError" type="string" value="false"/>
+          <field id="ignoreReadOnlyFields" type="string" value="true"/>
+          <field id="disableMandatoryCustomFieldValidation" type="string" value="notSet"/>
+          <field id="disableSystemNotesForCustomFields" type="string" value="notSet"/>
+          <field id="runServerSuiteScriptAndTriggerWorkflows" type="string" value="notSet"/>
+          <field id="batchSize" type="integer" value="0"/>
+          <cookie role="INPUT">
+            <value>H4sIAAAAAAAAAO1cW0/jOBT+K1HegTYpvazojKCAqJabJuyz5cQGvJvYke0AnV+/di6twxQ8zWob
+HvyCWufEx9/x8bmYTz35/pal3gvmgjA694eHA9/DNGGI0Ke5/9fD5cHU94SEFMGUUTz3V1j437+d
+3GIpCiLxDZbwHEr47WRRCMmyu/hvnMhrImQzcklwivSAx8pntzBT05wixLEQvpdD+Tz3K1HMj2A1
+HjP2j37H/G5+rl8/Stoq/KPPtTZqflH7fh4FMNIPL1P0Az96KYxxOvcvLh9A8wpQ4wVF4B6uMkyl
+78lVjtUY5sp8+EF9mftUWcz3qrn1yJJKzClMl2juh7PZyHwWJZzkUj/RY2pGIlcgGI9DkDQaeanR
+994EqeY/YyzFkBqI1QLWzzVkkcNECRac/pEwjkEwGE5AcJinUD4ynh2+4lhg/kISLA5pvaWHCcu0
+IbdZ4JxwZUxwjmPSCXL4e5BRpQZVanrEW+8uWLAsI7L8qLwd7w7dutczA6dW0S/I04wVHZx6OLHB
+HA5MnKyI030iXbA0VY6lQh24ZVJFsp0BTq0AhwbASHIVR/cI8BTcq22kEqrTc6+COqO7Q5xZIQZ9
+QlwH4AXHiEhwR8EVS9HOONU6rMHoMZOb8JtU+pTvPJf6egxLS4rUGF8BraBCXm7dcfW5SnaNUDXW
+xseyVKW5Rv6d1SqBMg9+FM6sphubLoL1odvrMc9ySFcgIj9N60xM69Qy3kZmq4UmXS0U2Cw06dNC
+p5QWMFU1zAumhWmjsWmjSsprSW210rirlaz1wLRPK0XLhYqmaPd0HxxbY+iszxh6W2SximjsEVyz
+BOp8uHsqDKy5PjBz/TXbK8J7zlChkmC5YizkxsXDVhio5by23DYnD7uGgsBaMwTDPr28Kf+A9ocz
+mEKFbfcC1+oNIM9Z3GfxF2G56d4W62TeqXgYTu2dTFM8fKXCYVFwrvc6gikW4I4j3Qs3J+MgHJhH
+44FDKmBZLX/i+VXD/7Gd7E1uZScORLkmVq2px9SIXjCXRKiIDO55A3ljpaCVITfC3kZYfBxFgo5B
+RKdYS0YxjHZTpJLsP10WuRYXai7DqcbtqqvsTTr7UzgZ2R1KrNfRpx9dMQmuMezQmFgRDqf9BhEo
+8RNrGgu9tFHY2uTW822nAKgVI0ALLgu1HlWBdD0VU2uhValK1kvqMc9ywrha0c4OMToe22GWmSZf
+q+ir7rpRqa7IjIZiZnqG+XRrIzHrWmMNrGcm7HPv/8SrV5XZQIQhT56NZNLKJrWUZ0ptTSJds0hg
+7duHo14brhI4uKBPhJopt1WXVEKeKbTVSIOuRrK27vre5Kv4UmCYKfzYmYJPDBV2NZS1Bh72eg0U
+PZM812XckgrJi6Rjn2u9Dx312cpfsVeACAIrVoBntdW6iSsE2HhFq/5S0p6S9pS0p6U9GLNCesUn
+FWvnux1rSO71FKmyKSPgGqqsecMQeSQYgTOjpDkYmXa7yPKUrfD2vvh3CtfR8cRqDxCXa0rVmrJ6
+SXGvFUtlowvOGQc3WAj4tPvFgAJuv2evgGOtKGv09HektFM0PvF/usR4YG3qvpAzRCua/FdfGA/s
+10RC6fkqnlAfgLcKAlied4A8sUOu3b9WQ1D/kCNW8A63gKOJvcKs0Ypaw36QHhnz2skpzS1hVTr9
+YK9nUJDkPWmk/fQoLv8m7WkdkcQRSRyRxBFJHJHEEUnW4fcL/T/IEUkckcQRSRyRxBFJHJHEEUkc
+kcQRSRyRxBFJHJHEEUkckcQRSRyRxBFJHJHEEUkckcQRSRyRxBFJHJHEEUkckcQRSVpEknrE/OGT
+NdDNoH71l99M+ReMC2fYfUUAAA==</value>
+          </cookie>
+          <Options>
+            <QueryOptions>
+              <Fields>
+                <ConnectorObject name="Customer"/>
+              </Fields>
+              <Inputs/>
+            </QueryOptions>
+          </Options>
+        </GenericOperationConfig>
+      </Configuration>
+      <Tracking>
+        <TrackedFields/>
+      </Tracking>
+      <Caching/>
+    </Operation>
+  </bns:object>
+</bns:Component>
