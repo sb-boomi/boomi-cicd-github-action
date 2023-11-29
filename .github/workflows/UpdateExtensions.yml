@@ -23,7 +23,7 @@ on:
   workflow_dispatch:
         inputs: 
           extensionfilename:
-            description: 'extensionsfilename'     
+            description: 'extensionfilename'     
             required: true
             default: ''
 
