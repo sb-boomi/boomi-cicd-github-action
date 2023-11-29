@@ -57,6 +57,7 @@ jobs:
         run: |
           echo "fileanmel: ${{ inputs.manifestfilename}}" 
           echo "$(pwd)"
+          echo "$(<${{ inputs.manifestfilename}})"
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             compId=$(grep '^componentId=' $file | cut -f2 -d'=')
             compType=$(grep '^componentType=' $file | cut -f2 -d'=')
