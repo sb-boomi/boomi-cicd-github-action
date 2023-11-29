@@ -58,11 +58,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: TEST Update Extension
         run: |
-          echo "name: ${{ inputs.extensionfilename}}" 
-        
-          
-          envName="TEST"
-                    export extensionJson="${{ parameters.inputs.extensionfilename}}"
+            echo "name: ${{ inputs.extensionfilename}}" 
+            envName="TEST"
+            export extensionJson="${{ inputs.extensionfilename}}"
             echo "file contents are .. $extensionJson"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
