@@ -60,7 +60,7 @@ jobs:
           echo "$(<${{ inputs.manifestfilename}})"
           file=$(<${{ inputs.manifestfilename}})
            echo "file contents are .. $file"
-          codeXML=$(grep '^codeXML=' $file | cut -f2 -d'=')
+          codeXML=$(grep '^codeXML=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           echo "codecml is ...$codeXML"
          
            for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
