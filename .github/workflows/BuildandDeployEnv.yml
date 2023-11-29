@@ -66,7 +66,8 @@ jobs:
           compNotes=$(grep '^buildNotes='${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compIds=$(grep '^componentIds=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           echo "codecml is ...$compIds"
-          
+          echo "notes is ...$compNotes"
+         
           for compId in $compIds; do
             echo "$compId"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
