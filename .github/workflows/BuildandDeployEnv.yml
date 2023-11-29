@@ -59,28 +59,26 @@ jobs:
           echo "$(pwd)"
           echo "$(<${{ inputs.manifestfilename}})"
           file=$(<${{ inputs.manifestfilename}})
-           echo "file contents are .. $file"
+          echo "file contents are .. $file"
           codeXML=$(grep '^codeXML=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
-          echo "codecml is ...$codeXML"
-         
-           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            compId=$(grep '^componentId=' $file | cut -f2 -d'=')
-            compType=$(grep '^componentType=' $file | cut -f2 -d'=')
-            compVer=$(grep '^ver=' $file | cut -f2 -d'=')
-            compNotes=$(grep '^buildNotes=' $file | cut -f2 -d'=')
-            codeXML=$(grep '^codeXML=' $file | cut -f2 -d'=')
-
+          compType=$(grep '^componentType=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
+          compVer=$(grep '^ver=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
+          compNotes=$(grep '^buildNotes='${{ inputs.manifestfilename}} | cut -f2 -d'=')
+          compIds=$(grep '^componentIds=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
+          echo "codecml is ...$compIds"
+          
+          for compId in $componentIds; do
+            echo "$componentId"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
-            
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
-            
+        
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/initcrPackage.sh
-           
-
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/initcrPackage.sh componentId=$compId packageVersion=$compVer componentType=$compType notes="$compNotes" extractComponentXmlFolder="$codeXML"
-          done
+        done
+         
+ 
           
   deployPackageTEST:
     needs: createPackage
