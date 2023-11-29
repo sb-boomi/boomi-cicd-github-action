@@ -166,7 +166,7 @@ jobs:
           compVer=$(grep '^ver=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compNotes=$(grep '^buildNotes=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compIds=$(grep '^componentIds=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
-          envName=$(grep '^targetTestEnv=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
+          envName=$(grep '^targetProdEnv=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           listenerStatus=$(grep '^listenerStatus=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compNotes=$(grep '^deployNotes=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           echo "env is ...$envName"
