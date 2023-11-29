@@ -63,7 +63,7 @@ jobs:
           codeXML=$(grep '^codeXML=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compType=$(grep '^componentType=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compVer=$(grep '^ver=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
-          compNotes=$(grep '^buildNotes='${{ inputs.manifestfilename}} | cut -f2 -d'=')
+          compNotes=$(grep '^buildNotes=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           compIds=$(grep '^componentIds=' ${{ inputs.manifestfilename}} | cut -f2 -d'=')
           echo "codecml is ...$compIds" 
           echo "notes is ...$compNotes"
