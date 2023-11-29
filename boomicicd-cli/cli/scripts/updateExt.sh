@@ -5,7 +5,7 @@ set -a
 source $WD/bin/common.sh
 source $WD/bin/propertiesCICD.sh
 
-ARGUMENTS=(authToken componentId extensionJsonFile env)
+ARGUMENTS=(authToken extensionJsonFile env)
 
 inputs "$@"
 if [ "$?" -gt 0 ]
