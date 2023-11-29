@@ -62,7 +62,7 @@ jobs:
             echo "name: ${{ inputs.extensionfilename}}" 
             envName="TEST"
             echo "$GITHUB_CONTEXT"
-            echo "NSusername is... ${{ env.EXTENSIONSNSUSER }}"
+            echo "NSusername is... $EXTENSIONSNSUSER"
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
