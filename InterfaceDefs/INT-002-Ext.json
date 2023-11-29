@@ -1,1 +1,28 @@
-{"@type":"EnvironmentExtensions","connections":{"@type":"Connections","connection":[{"@type":"Connection","field":[{"@type":"Field","id":"user","encryptedValueSet":false,"usesEncryption":true,"valueFrom":"ExtensionsNSUser","componentOverride":false,"useDefault":false}],"id":"598c512d-6654-4642-abf9-4813fa74bd95","name":"NetSuite Connection TBA"}]},"environmentId":"0a5043e9-b3d1-4723-b5a1-7c12b181ff98","partial":"true","extensionGroupId":"","id":"0a5043e9-b3d1-4723-b5a1-7c12b181ff98"}
+{
+    "@type": "EnvironmentExtensions",
+    "connections": {
+        "@type": "Connections",
+        "connection": [
+            {
+                "@type": "Connection",
+                "field": [
+                    {
+                        "@type": "Field",
+                        "componentOverride": false,
+                        "encryptedValueSet": false,
+                        "id": "user",
+                        "useDefault": false,
+                        "usesEncryption": true,
+                        "valueFrom": "ExtensionsNSUser"
+                    }
+                ],
+                "id": "598c512d-6654-4642-abf9-4813fa74bd95",
+                "name": "NetSuite Connection TBA"
+            }
+        ]
+    },
+    "environmentId": "0a5043e9-b3d1-4723-b5a1-7c12b181ff98",
+    "extensionGroupId": "",
+    "id": "0a5043e9-b3d1-4723-b5a1-7c12b181ff98",
+    "partial": "true"
+}
