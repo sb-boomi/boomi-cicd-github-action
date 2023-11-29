@@ -61,9 +61,9 @@ jobs:
           file=$(<${{ inputs.manifestfilename}})
            echo "file contents are .. $file"
           codeXML=$(grep '^codeXML=' $file | cut -f2 -d'=')
-          echo "$codeXML"
+          echo "codecml is ...$codeXML"
          
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             compId=$(grep '^componentId=' $file | cut -f2 -d'=')
             compType=$(grep '^componentType=' $file | cut -f2 -d'=')
             compVer=$(grep '^ver=' $file | cut -f2 -d'=')
@@ -81,7 +81,7 @@ jobs:
 
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/initcrPackage.sh componentId=$compId packageVersion=$compVer componentType=$compType notes="$compNotes" extractComponentXmlFolder="$codeXML"
           done
-
+          
   deployPackageTEST:
     needs: createPackage
     # The type of runner that the job will run on
