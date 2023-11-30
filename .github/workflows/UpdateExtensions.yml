@@ -65,7 +65,8 @@ jobs:
             envName="TEST"
             echo "NS .. $NSUsername"
             echo "NSusername is... ${{ vars.EXTENSIONSNSUSER }}"
-               echo "NSusername is... ${{ vars.EXTENSIONSNSUSER}}"
+            fm = "EXTENSIONSNSUSER"
+            echo "NSusername is... ${{ vars.$fm}}"
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
