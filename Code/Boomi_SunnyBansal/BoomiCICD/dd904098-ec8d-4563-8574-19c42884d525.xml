@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="dd904098-ec8d-4563-8574-19c42884d525" version="1" name="SecondCICDProcess" type="process" createdDate="2023-11-29T00:16:35Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-11-29T00:16:35Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="false" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3" copiedFromComponentId="51e6e620-0949-4ce5-a888-8519deac526a" copiedFromComponentVersion="6">
+<bns:Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bns="http://api.platform.boomi.com/" folderFullPath="Boomi_SunnyBansal/BoomiCICD" componentId="dd904098-ec8d-4563-8574-19c42884d525" version="2" name="SecondCICDProcess" type="process" createdDate="2023-11-29T00:16:35Z" createdBy="sunny.bansal@boomi.com" modifiedDate="2023-11-29T23:04:27Z" modifiedBy="sunny.bansal@boomi.com" deleted="false" currentVersion="true" folderName="BoomiCICD" folderId="Rjo2MjUzNTE3">
   <bns:encryptedValues/>
   <bns:description/>
   <bns:object>
@@ -69,8 +69,9 @@ Error Message: {1}</exMessage>
         </shape>
         <shape image="connectoraction_icon" name="shape7" shapetype="connectoraction" userlabel="" x="768.0" y="160.0">
           <configuration>
-            <connectoraction actionType="UPDATE" allowDynamicCredentials="NONE" connectionId="96574156-7dd9-42c2-b103-f42901502984" connectorType="netsuitesdk" hideSettings="false" operationId="a3df1ec1-2cbb-403f-b68f-d0a28fc6fb2f" parameter-profile="1e0122bb-ea22-40c2-9e4f-935e923af18d">
+            <connectoraction actionType="UPDATE" allowDynamicCredentials="NONE" connectionId="598c512d-6654-4642-abf9-4813fa74bd95" connectorType="netsuitesdk" hideSettings="false" operationId="a3df1ec1-2cbb-403f-b68f-d0a28fc6fb2f" parameter-profile="1e0122bb-ea22-40c2-9e4f-935e923af18d">
               <parameters/>
+              <dynamicProperties/>
             </connectoraction>
           </configuration>
           <dragpoints>
