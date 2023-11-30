@@ -66,6 +66,9 @@ jobs:
             echo "NS .. $NSUsername"
             echo "NSusername value is......... ${{ vars.EXTENSIONSNSUSER }}"
             echo ${{ vars[format('EXTENSION{0}', 'TEST')] }}
+            fm = "EXTENSIONSNSUSER"
+             echo ${{ vars[format('EXTENSIONSNSUSER', 'TEST')] }}
+          
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
