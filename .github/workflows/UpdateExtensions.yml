@@ -64,8 +64,7 @@ jobs:
             echo "name: ${{ inputs.extensionfilename}}" 
             envName="TEST"
             echo "NS .. $NSUsername"
-            echo "NSusername is... ${{ vars.EXTENSIONSNSUSER }}"
-            fm = "EXTENSIONSNSUSER"
+            echo "NSusername value is......... ${{ vars.EXTENSIONSNSUSER }}"
             echo ${{ vars[format('EXTENSION{0}', 'TEST')] }}
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
