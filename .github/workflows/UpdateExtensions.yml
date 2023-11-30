@@ -28,9 +28,7 @@ on:
             default: ''
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-env:
-  # Setting an environment variable with the value of a configuration variable
-  NSUsername: ${{ vars.EXTENSIONSNSUSER }}
+
 jobs:
   # This workflow contains a single job called "build"
 
@@ -75,4 +73,7 @@ jobs:
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh env=$envName 
+
+        env:
+           NSUsername: ${{ vars.EXTENSIONSNSUSER }}
  
