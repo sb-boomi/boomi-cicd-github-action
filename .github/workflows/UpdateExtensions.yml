@@ -64,9 +64,9 @@ jobs:
             echo "name: ${{ inputs.extensionfilename}}" 
             envName="TEST"
             echo "NSusername is... ${{ vars.EXTENSIONSNSUSER }}"
-           
+        
             varName="EXTENSIONSNSUSER"
-            
+                echo "NSusername is... ${{ vars.${varName} }}"
             echo "vn .. $varName"
             echo "value is 123... ${{ vars[format('{0}', 'EXTENSIONSNSUSER')] }}"
 
