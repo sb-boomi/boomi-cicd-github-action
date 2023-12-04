@@ -64,18 +64,18 @@ jobs:
             echo "$(pwd)"
             file=$(<${{ inputs.executefilename}})
             echo "file contents are .. $file"
-            atomName=$(grep '^atomName=' ${{ inputs.executefilename}} | cut -f2 -d'=')
-            processName=$(grep '^processName=' ${{ inputs.executefilename}} | cut -f2 -d'=')
-            componentId=$(grep '^componentId=' ${{ inputs.executefilename}} | cut -f2 -d'=')
-            echo "p name is.. $processName"
-            echo "a name is.. $atomName"
-            echo "c name is.. $componentId"
+            atomName1=$(grep '^atomName=' ${{ inputs.executefilename}} | cut -f2 -d'=')
+            processName1=$(grep '^processName=' ${{ inputs.executefilename}} | cut -f2 -d'=')
+            componentId1=$(grep '^componentId=' ${{ inputs.executefilename}} | cut -f2 -d'=')
+            echo "p name is.. $processName1"
+            echo "a name is.. $atomName1"
+            echo "c name is.. $componentId1"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
             chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/executeProc.sh
-            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/executeProc.sh processName=$processName atomName=$atomName componentId=$componentId 
+            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/executeProc.sh processName=$processName1 atomName=$atomName1 componentId=$componentId1 
 
 
  
