@@ -66,7 +66,7 @@ jobs:
             echo "NSusername is... ${{ vars.EXTENSIONSNSUSER }}"
         
             varName="EXTENSIONSNSUSER"
-                echo "NSusername is... ${{ vars.${varName} }}"
+                echo "NSusername is... ${{ vars."${varName}" }}"
             echo "vn .. $varName"
             echo "value is 123... ${{ vars[format('{0}', 'EXTENSIONSNSUSER')] }}"
 
