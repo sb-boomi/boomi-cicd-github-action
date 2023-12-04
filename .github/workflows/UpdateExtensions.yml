@@ -70,16 +70,16 @@ jobs:
             echo "vn .. $varName"
             
             
-            #echo "dynamic value is ... ${{ vars[format("${varName}", 'TEST')] }}"
+            # echo "dynamic value is ... ${{ vars[format("${varName}", 'TEST')] }}"
           
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
-            #export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
-            #export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
-            #chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
-            #~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
-            #chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh
-            #~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh env=$envName 
+            # export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
+            # export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
+            # chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
+            # ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
+            # chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh
+            # ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/updateExt.sh env=$envName 
 
 
  
