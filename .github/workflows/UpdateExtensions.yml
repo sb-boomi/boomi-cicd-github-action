@@ -71,7 +71,7 @@ jobs:
             #   echo "value is 123... ${{ vars[format('EXTENSIONS{0}', 'NSUSER')] }}"
 
            
-            echo "value is 1234... ${{ vars[format("${varName}")] }}
+            echo "value is 1234... ${{ vars[format(${varName}{0},'')] }}
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
             # export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
