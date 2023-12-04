@@ -70,12 +70,12 @@ jobs:
             echo "p name is.. $processName"
             echo "a name is.. $atomName"
             echo "c name is.. $componentId"
-            # export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
-            # export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
-            # chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
-            # ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
-            # chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/executeProc.sh
-            # ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/executeProc.sh processName=$processName atomName=$atomName componentId=$componentId 
+            export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
+            export WORKSPACE=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
+            chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
+            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/bin/common.sh
+            chmod +x ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/executeProc.sh
+            ~/boomi-cicd-github-action/boomicicd-cli/cli/scripts/executeProc.sh processName=$processName atomName=$atomName componentId=$componentId 
 
 
  
