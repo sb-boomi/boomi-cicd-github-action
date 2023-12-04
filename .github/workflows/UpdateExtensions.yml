@@ -65,10 +65,10 @@ jobs:
             envName="TEST"
             echo "NSusername is... ${{ vars.EXTENSIONSNSUSER }}"
            
-            varName="EXTENSIONSNSUSER"
+            varName="NSUSER"
             
             echo "vn .. $varName"
-            echo "value is 123... ${{ vars[format('EXTENSIONS{0}', 'NSUSER')] }}"
+            echo "value is 123... ${{ vars[format('EXTENSIONS{0}', '${varName}')] }}"
         
             
             export extensionJson="$(<${{ inputs.extensionfilename}})"
