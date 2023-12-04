@@ -70,7 +70,7 @@ jobs:
             echo "vn .. $varName"
             
             
-            echo "dynamic value is ... ${{ vars[format('$varName{0}', 'TEST')] }}"
+            echo "dynamic value is ... ${{ vars[format("${varName}", 'TEST')] }}"
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
             export WD=~/boomi-cicd-github-action/boomicicd-cli/cli/scripts
