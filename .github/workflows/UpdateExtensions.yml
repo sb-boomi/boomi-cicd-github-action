@@ -64,13 +64,13 @@ jobs:
             echo "name: ${{ inputs.extensionfilename}}" 
             envName="TEST"
             echo "NSusername is... ${{ vars.EXTENSIONSNSUSER }}"
-            echo "value is ... ${{ vars[format('EXTENSIONSNSUSER', 'TEST')] }}"
+           
             varName="EXTENSIONSNSUSER"
             
             echo "vn .. $varName"
             
             
-            # echo "dynamic value is ... ${{ vars[format("${varName}", 'TEST')] }}"
+
           
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
