@@ -68,7 +68,7 @@ jobs:
             varName="NSUSER"
             
             echo "vn .. $varName"
-            echo "value is 123... ${{ vars[format('EXTENSIONS{0}', '${varName}')] }}"
+            echo "value is 123... ${{ vars[format('EXTENSIONS{0}', "${varName}")] }}"
         
             
             export extensionJson="$(<${{ inputs.extensionfilename}})"
