@@ -71,7 +71,6 @@ jobs:
             #   echo "value is 123... ${{ vars[format('EXTENSIONS{0}', 'NSUSER')] }}"
 
            
-            echo "value is 1234... ${{ vars[format('${varName}')] }}
             echo "value is 1234... ${{ vars[format("${varName}")] }}
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
