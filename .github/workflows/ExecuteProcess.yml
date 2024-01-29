@@ -71,10 +71,9 @@ jobs:
             echo "a name is.. $atomName1"
             echo "c name is.. $componentId1"
             export WD=~/cicd/boomicicd-cli/cli/scripts
-            chmod +x ~/cicd/boomicicd-cli/cli/scripts/bin/common.sh
+            
             export WORKSPACE=~/cicd/boomicicd-cli/cli/scripts
             ~/cicd/boomicicd-cli/cli/scripts/bin/common.sh
-            chmod +x ~/cicd/boomicicd-cli/cli/scripts/executeProc.sh
             ~/cicd/boomicicd-cli/cli/scripts/executeProc.sh processName=$processName1 atomName=$atomName1 componentId=$componentId1 
 
 
