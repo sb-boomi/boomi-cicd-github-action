@@ -71,9 +71,10 @@ jobs:
 
             echo "vn .. $varName"
             echo "value is 1234... ${{ vars[format('{0}', 'EXTENSIONSNSUSER')] }}"
-            echo "${{ toJSON(vars) }}" 
-
-            extVal="$(jq -r --arg varName "$varName" '.[$varName]' <<'JSON' ${{ toJSON(vars) }} JSON )"
+            varJson = ${{ toJSON(vars) }}
+            echo "$varJson" 
+            echo "$varJson" | jq -r '.EXTENSIONSNSUSER'
+            
             echo" value is ..$extVal"
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
