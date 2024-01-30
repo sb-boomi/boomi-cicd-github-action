@@ -70,8 +70,6 @@ jobs:
        
 
             echo "vn .. $varName"
-            # echo "value is 1234... ${{ vars[format('{0}', 'EXTENSIONSNSUSER')] }}"
-            # echo "${{ toJSON(vars) }}"
             echo '${{ toJSON(vars) }}' | jq -r '.EXTENSIONSNSUSER'
             
             echo" value is ..$extVal"
