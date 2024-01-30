@@ -65,7 +65,7 @@ jobs:
             envName="TEST"
             echo "NSusername is... ${{ vars.EXTENSIONSNSUSER }}"
             
-            varName="EXTENSIONSNSUSER"
+            varName="nameVar"
       
        
 
