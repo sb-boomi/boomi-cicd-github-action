@@ -71,7 +71,7 @@ jobs:
 
             echo "vn .. $varName"
             echo "value is 1234... ${{ vars[format('{0}', 'EXTENSIONSNSUSER')] }}"
-            export varJson = ${{ toJSON(vars) }}
+            export varJson = "$(<${{ toJSON(vars) }})"
             echo "$varJson" 
             echo "$varJson" | jq -r '.EXTENSIONSNSUSER'
             
