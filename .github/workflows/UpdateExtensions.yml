@@ -70,6 +70,7 @@ jobs:
        
 
             echo "vn .. $varName"
+            echo "${{ toJSON(vars) }}"
             echo '${{ toJSON(vars) }}' | jq -r ".$varName"
             
             
