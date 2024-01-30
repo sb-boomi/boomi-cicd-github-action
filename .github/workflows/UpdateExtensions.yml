@@ -72,8 +72,9 @@ jobs:
             echo "vn .. $varName"
             echo "value is 1234... ${{ vars[format('{0}', 'EXTENSIONSNSUSER')] }}"
             echo "${{ toJSON(vars) }}" 
-           
-            
+
+            extVal="$(jq -r --arg v_db_schema "$v_db_schema" '.[$varName]' <<'JSON' ${{ toJSON(vars) }} JSON )"
+            echo" value is ..$extVal"
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
             export WD=~/cicd/boomicicd-cli/cli/scripts
