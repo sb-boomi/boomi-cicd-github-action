@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+ # This is a basic workflow to help you get started with Actions
 
 
 name: Update Extensions
@@ -71,7 +71,7 @@ jobs:
 
             echo "vn .. $varName"
             echo "value is 1234... ${{ vars[format('{0}', 'EXTENSIONSNSUSER')] }}"
-            varJson = ${{ toJSON(vars) }}
+            export varJson = "${{ toJSON(vars) }}"
             echo "$varJson" 
             echo "$varJson" | jq -r '.EXTENSIONSNSUSER'
             
