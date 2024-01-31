@@ -72,7 +72,7 @@ jobs:
             echo "vn .. $varName"
             echo "${{ toJSON(vars) }}"
             echo '${{ toJSON(vars) }}' | jq -r ".$varName"
-            extVal="$(jq -r --arg varName "$varName" '.[$varName]' <<'JSON' ${{ toJSON(vars) }} JSON )"
+            extVal="$(jq -r --arg varName "$varName" '.[$varName]' <<'JSON' ${{ toJSON(vars) }} JSON)"
             echo "varVal is ...$extVal"
             export extensionJson="$(<${{ inputs.extensionfilename}})"
             echo "file contents are .. $extensionJson"
