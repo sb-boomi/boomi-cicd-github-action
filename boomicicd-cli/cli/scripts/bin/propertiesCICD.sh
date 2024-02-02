@@ -1,7 +1,7 @@
 #Boomi Account Properties
-export accountId="boomi_sunnybansal-VUZ3NC"
+
 #The subAccount ID to which an attachment to the parent Cloud will be installed
-export authToken="faec1e56-250a-4312-9388-d00c143455f9"
+
 #Sub Account Authorization (using an Atomsphere API Token)
 export baseURL=https://api.boomi.com/api/rest/v1/$accountId
 #Do not set 
